@@ -1,0 +1,45 @@
+{
+	"name": "randomoji",
+	"version": "0.0.0",
+	"description": "GET A RANDOM EMOJI",
+	"license": "MIT",
+	"repository": "saravieira/randomoji",
+	"author": {
+		"name": "Sara Vieira",
+		"email": "hey@iamsaravieira.com",
+		"url": "iamsaravieira.com"
+	},
+	"bin": "cli.js",
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && nyc ava"
+	},
+	"files": [
+		"index.js",
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		""
+	],
+	"dependencies": {
+		"emoji-datasource": "^3.0.0",
+		"meow": "^3.7.0",
+		"node-emoji": "^1.8.1"
+	},
+	"devDependencies": {
+		"ava": "^0.20.0",
+		"codecov": "^2.2.0",
+		"nyc": "^11.0.0",
+		"xo": "^0.18.2"
+	},
+	"nyc": {
+		"reporter": [
+			"lcov",
+			"text"
+		]
+	}
+}
