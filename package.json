@@ -9,6 +9,7 @@
 		"email": "hey@iamsaravieira.com",
 		"url": "iamsaravieira.com"
 	},
+	"main": "index.js",
 	"bin": "cli.js",
 	"engines": {
 		"node": ">=4"
@@ -16,10 +17,6 @@
 	"scripts": {
 		"test": "xo --fix"
 	},
-	"files": [
-		"index.js",
-		"cli.js"
-	],
 	"keywords": [
 		"cli-app",
 		"cli",
@@ -35,11 +32,5 @@
 		"codecov": "^2.2.0",
 		"nyc": "^11.0.0",
 		"xo": "^0.18.2"
-	},
-	"nyc": {
-		"reporter": [
-			"lcov",
-			"text"
-		]
 	}
 }
