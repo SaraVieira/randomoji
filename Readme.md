@@ -1,4 +1,4 @@
-# randomoji [![Build Status](https://travis-ci.org/saravieira/randomoji.svg?branch=master)](https://travis-ci.org/saravieira/randomoji)
+# randomoji [![Build Status](https://travis-ci.org/SaraVieira/randomoji.svg?branch=master)](https://travis-ci.org/SaraVieira/randomoji)
 
 > GET A RANDOM EMOJI
 
