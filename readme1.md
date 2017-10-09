@@ -1,4 +1,4 @@
-# randomoji [![Build Status](https://travis-ci.org/saravieira/randomoji.svg?branch=master)](https://travis-ci.org/saravieira/randomoji) [![codecov](https://codecov.io/gh/saravieira/randomoji/badge.svg?branch=master)](https://codecov.io/gh/saravieira/randomoji?branch=master)
+# randomoji [![Build Status](https://travis-ci.org/saravieira/randomoji.svg?branch=master)](https://travis-ci.org/saravieira/randomoji)
 
 > GET A RANDOM EMOJI
 
@@ -6,7 +6,9 @@
 ## Install
 
 ```
-$ npm install randomoji
+npm install randomoji
+or
+yarn add randomoji
 ```
 
 
@@ -15,51 +17,63 @@ $ npm install randomoji
 ```js
 const randomoji = require('randomoji');
 
-randomoji('unicorns');
-//=> 'unicorns & rainbows'
+randomoji();
+//=> 📄
+randomoji(5);
+//=> 😓 😿 👖 👑 👫
+randomEmoji(5, 'objects')
+//=> 🛋 ⌚️ 🗂 💊 🗞
 ```
 
 
 ## API
 
-### randomoji(input, [options])
+### randomoji(NumberOfEmojis, category)
 
-#### input
+#### NumberOfEmojis
 
-Type: `string`
+Type: `int`
 
-Lorem ipsum.
+Number of Emojis you want. Defaults to one
 
-#### options
+#### category
 
-##### foo
+Type: `string`<br>
+What category you want these emojis to be in:
 
-Type: `boolean`<br>
-Default: `false`
-
-Lorem ipsum.
+Categories:
+* symbols
+* objects
+* nature
+* people
+* foods
+* places
+* activity
+* flags
+* skin tones
 
 
 ## CLI
 
 ```
-$ npm install --global randomoji
+npm install --global randomoji
+or
+yarn global add randomoji
 ```
 
 ```
 $ randomoji --help
 
   Usage
-    randomoji [input]
-
-  Options
-    --foo  Lorem ipsum [Default: false]
+    randomoji [NumberOfEmojis} [category]
 
   Examples
     $ randomoji
-    unicorns & rainbows
-    $ randomoji ponies
-    ponies & rainbows
+    > 📄
+    $ randomoji 5
+    > 😓 😿 👖 👑 👫
+    $ randomEmoji 5 objects
+    > 🛋 ⌚️ 🗂 💊 🗞
 ```
 
 
