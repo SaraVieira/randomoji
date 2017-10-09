@@ -1,6 +1,6 @@
 {
 	"name": "randomoji",
-	"version": "0.1.0",
+	"version": "0.0.0",
 	"description": "GET A RANDOM EMOJI",
 	"license": "MIT",
 	"repository": "saravieira/randomoji",
@@ -14,7 +14,7 @@
 		"node": ">=4"
 	},
 	"scripts": {
-		"test": "xo && nyc ava"
+		"test": "xo --fix"
 	},
 	"files": [
 		"index.js",
