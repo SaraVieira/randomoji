@@ -21,7 +21,7 @@ randomoji();
 //=> 📄
 randomoji(5);
 //=> 😓 😿 👖 👑 👫
-randomEmoji(5, 'objects')
+randomoji(5, 'objects')
 //=> 🛋 ⌚️ 🗂 💊 🗞
 ```
 
@@ -72,7 +72,7 @@ $ randomoji --help
     > 📄
     $ randomoji 5
     > 😓 😿 👖 👑 👫
-    $ randomEmoji 5 objects
+    $ randomoji 5 objects
     > 🛋 ⌚️ 🗂 💊 🗞
 ```
 
